@@ -1,0 +1,343 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'serif', Georgia, serif;
+    background-color: #f5f2ea;
+    background-image: url('assets/background-image.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-blend-mode: overlay;
+    background-opacity: 0.9;
+    color: #556b2f;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #556b2f;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #8a7d62;
+    font-style: italic;
+}
+
+/* Main Content */
+.main-content {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Polaroids (Desktop) */
+.polaroid {
+    position: absolute;
+    width: 10rem;
+}
+
+.polaroid-frame {
+    background: #fff;
+    padding: 0.5rem 0.5rem 1rem; /* extra bottom padding (like polaroid) */
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border-radius: 0.25rem;
+}
+
+
+.polaroid img {
+    width: 100%;
+    height: 9rem;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroid p {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.5rem;
+    font-family: serif;
+}
+
+.top-left {
+    top: 0;
+    left: 2rem;
+    transform: rotate(-3deg);
+}
+
+.top-right {
+    top: 1rem;
+    right: 2rem;
+    transform: rotate(2deg);
+}
+
+.bottom-left {
+    bottom: 2rem;
+    left: 3rem;
+    transform: rotate(-5deg);
+}
+
+.bottom-right {
+    bottom: 1rem;
+    right: 3rem;
+    transform: rotate(5deg);
+}
+
+/* Mobile Polaroids */
+.mobile-polaroids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;              /* slightly smaller gap */
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;      /* prevent edge overflow */
+}
+
+.polaroid-mobile {
+    width: 45%;             /* take ~45% of screen width */
+    max-width: 120px;       /* but don’t exceed 120px */
+    transform: rotate(var(--rotation, 0deg));
+}
+
+.polaroid-mobile img {
+    width: 100%;            /* make image fit container */
+    height: auto;           /* keep aspect ratio */
+    border-radius: 0.25rem;
+}
+
+
+/* Letter */
+.letter {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    margin: 0 auto;
+    min-height: 25rem;
+}
+
+.letter-envelope {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    color: #d4af37;
+}
+
+.letter-content {
+    font-size: 1.125rem;
+    color: #556b2f;
+    padding: 1rem 0;
+    white-space: pre-wrap;
+    min-height: 20rem;
+}
+
+.letter-signature {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.signature-line {
+    border-top: 2px solid rgba(212, 175, 55, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.letter-signature p {
+    color: #8a7d62;
+    font-style: italic;
+}
+
+/* Lyrics */
+.lyrics {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.lyrics-box {
+    background: rgba(212, 175, 55, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 32rem;
+    margin: 0 auto;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.lyrics-box p {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #556b2f;
+    line-height: 1.5;
+}
+
+.lyric-credit {
+    font-size: 0.875rem;
+    color: #8a7d62;
+    margin-top: 0.5rem;
+}
+
+/* Spotify */
+.spotify {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.spotify-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.spotify h3 {
+    font-size: 1.125rem;
+    color: #556b2f;
+    margin-bottom: 0.5rem;
+}
+
+.spotify iframe {
+    border-radius: 0.25rem;
+}
+/* Spotify */
+.album-art {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #8a7d62;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes polaroidIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(var(--initial-rotate, 0deg));
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(var(--final-rotate, 0deg));
+    }
+}
+
+.animate-element {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.header {
+    animation-name: fadeInUp;
+}
+
+.letter {
+    animation-name: fadeInUp;
+}
+
+.lyrics {
+    animation-name: fadeInScale;
+}
+
+.spotify, .footer {
+    animation-name: fadeInUp;
+}
+
+.polaroid, .polaroid-mobile {
+    animation-name: polaroidIn;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .polaroid {
+        display: none; /* Hide desktop polaroids on mobile */
+    }
+
+    .letter {
+        padding: 1rem;
+        min-height: 20rem;
+    }
+
+    .letter-content {
+        font-size: 1rem;
+    }
+
+    .lyrics-box p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-polaroids {
+        display: none; /* Hide mobile polaroids on desktop */
+    }
+}

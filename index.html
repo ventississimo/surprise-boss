@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Boss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header animate-element" data-delay="0">
+            <h1>Surprise Boss</h1>
+            <p class="subtitle">^-^</p>
+        </header>
+
+        <!-- Main Content with Polaroids -->
+        <main class="main-content">
+            <!-- Desktop Polaroids (absolute positioned) -->
+            <div class="polaroid top-left animate-element" data-delay="0.2">
+                <div class="polaroid-frame">
+                    <img src="assets/polaroid1.jpg" alt="October Magic">">
+                    <p>October Magic</p>
+                </div>
+            </div>
+
+            <div class="polaroid top-right animate-element" data-delay="0.4">
+                <div class="polaroid-frame">
+                  <img src="assets/polaroid2.jpg" alt="Spring Awakening">">
+                    <p>Spring Awakening</p>
+                </div>
+            </div>
+
+            <div class="polaroid bottom-left animate-element" data-delay="0.6">
+                <div class="polaroid-frame">
+                    <img src="assets/polaroid5.jpg" alt="October Magic">">
+                    <p>Earth Signs</p>
+                </div>
+            </div>
+
+            <div class="polaroid bottom-right animate-element" data-delay="0.8">
+                <div class="polaroid-frame">
+                    <img src="assets/polaroid4.jpg" alt="October Magic">">
+                    <p>Cozy Moments</p>
+                </div>
+            </div>
+
+            <!-- Mobile Polaroids (flex row) -->
+            <div class="mobile-polaroids">
+                <div class="polaroid-mobile animate-element" data-delay="0.2">
+                    <div class="polaroid-frame">
+                        <img src="assets/polaroid3.jpg" alt="October Magic">
+                         <p></p>
+                    </div>
+                </div>
+
+                <div class="polaroid-mobile animate-element" data-delay="0.4">
+                    <div class="polaroid-frame">
+                        <img src="assets/polaroid6.jpg" alt="October Magic">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Letter -->
+        <div class="letter animate-element" data-delay="0.5">
+            <div class="letter-envelope">✉️</div>
+            <div class="letter-content">
+                Hi Boss bb,<br><br>
+                Nag code2 nanaman ako — because why not, right? 😅 Joke. I made this little surprise since I couldn’t be at your opening. Even if I really wanted to, Wednesday was church time, so I had to miss it.
+
+                You might have receive the small gift na dala-dala ni Pia since naopen mo na ito hahahaha. Xenxia if yan muna ang maibigay ko. You need to eat and stay hydrated even in your busy days. I wanna buy flower but I don't know the dates nung 100 pesos hahaha but anyway, I created this for a little effort kuno hahahha.
+
+                I didn’t want to let the moment pass without saying this: Congratulations to you and your team on such a successful opening! 🎉 I know it hasn’t been easy — there were struggles and long days. I know how hard you guys prepared for this opening event — but I’ve always believed in what you can do. And you proved it again. See? Told you nyahaha<br><br>
+                Even if I wasn’t there physically, you know I’m always supporting you in every way I can. I’m proud of you, Boss ^-^<br>
+                And you know what else October reminds me of? It’s when we had our very first chat. Hard to believe how far we’ve come since then — but I’ll never forget it(reply ba naman sa note hahahaha)<br>
+                This might be a little short (I’m not the best at expressing myself in letters, haha), but I hope it makes you smile.<br><br>
+                Always cheering for you,<br><br>
+                heben
+            </div>
+            <div class="letter-signature">
+                <hr class="signature-line">
+                <p>With love,</p>
+            </div>
+        </div>
+
+        </main>
+
+        <!-- Lyric Section -->
+        <section class="lyrics animate-element" data-delay="1">
+            <div class="lyrics-box">
+                <p>"We fell in love in October …<br>My girl, my girl, my girl,<br>you will be my girl"</p>
+                <p class="lyric-credit">- girl in red</p>
+            </div>
+        </section>
+
+        <!-- Spotify Album Art -->
+        <section class="spotify animate-element" data-delay="1.2">
+             <div class="spotify-container">
+             <h3>Song for this month</h3>
+             <img src="assets/album-cover.png" alt="girl in red - we fell in love in october" class="album-art">
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer animate-element" data-delay="1.4">
+            <p>Made with 💚 for my Boss</p>
+        </footer>
+    </div>
+
+    <!-- Autoplay Audio -->
+    <audio autoplay loop style="display:none;">
+        <source src="girl-in-red-october.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
